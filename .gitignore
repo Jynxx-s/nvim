@@ -1,0 +1,26 @@
+# Neovim swap, backup, undo files
+*.swp
+*.swo
+*.bak
+*.tmp
+*.old
+*~
+*.log
+
+# Undo and backup directories
+undo/
+undodir/
+backup/
+
+# Session or state files (optional)
+session/
+shada/
+shada-main.shada
+main.shada
+
+# Plugin directories (only if not tracking plugin code directly)
+site/
+pack/
+
+# Compiled Lua files
+*.luac
