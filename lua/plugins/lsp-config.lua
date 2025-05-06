@@ -23,9 +23,9 @@ return {
       })
       vim.diagnostic.config({
         virtual_text = {
-          prefix = 'nice one fuckwit', -- Could be '■', '▎', 'x'
+          prefix = '■', -- Could be '■', '▎', 'x'
           spacing = 2,
-          source = "if_many", -- show source name if multiple sources
+          source = "if_many",
         },
         signs = true,
         underline = true,
