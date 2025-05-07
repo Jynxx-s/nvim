@@ -21,9 +21,14 @@ return {
           ['lua_ls'] = {},
         },
       })
+      vim.lsp.config('pyright', {
+        settings = {
+          ['pyright'] = {},
+        }
+      })
       vim.diagnostic.config({
         virtual_text = {
-          prefix = '■', -- Could be '■', '▎', 'x'
+          prefix = 'kys', -- Could be '■', '▎', 'x'
           spacing = 2,
           source = "if_many",
         },
