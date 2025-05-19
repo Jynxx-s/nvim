@@ -6,7 +6,7 @@ return {
 				ensure_installed = {},
 				"stylua", -- Lua formatter
 				"prettier", -- Prettier formatter
-				"black",
+          "black",
 				"isort",
 			})
 		end,
