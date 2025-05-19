@@ -21,35 +21,35 @@ return {
 	},
 	{
 		"neovim/nvim-lspconfig",
-    lazy = false,
+		lazy = false,
 		config = function()
-      local capabilities = require('cmp_nvim_lsp').default_capabilities()
+			local capabilities = require("cmp_nvim_lsp").default_capabilities()
 			vim.lsp.config("lua_ls", {
-        capabilities = capabilities,
+				capabilities = capabilities,
 				settings = {
 					["lua_ls"] = {},
 				},
 			})
 			vim.lsp.config("pyright", {
-        capabilities = capabilities,
+				capabilities = capabilities,
 				settings = {
 					["pyright"] = {},
 				},
 			})
 			vim.lsp.config("html", {
-        capabilities = capabilities,
+				capabilities = capabilities,
 				settings = {
 					["html"] = {},
 				},
 			})
 			vim.lsp.config("cssls", {
-        capabilities = capabilities,
+				capabilities = capabilities,
 				settings = {
 					["cssls"] = {},
 				},
 			})
 			vim.lsp.config("ts_ls", {
-        capabilities = capabilities,
+				capabilities = capabilities,
 				settings = {
 					["ts_ls"] = {},
 				},
