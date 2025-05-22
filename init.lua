@@ -42,3 +42,16 @@ vim.api.nvim_create_autocmd("QuitPre", {
   end
 })
 
+vim.api.nvim_create_autocmd("InsertEnter", {
+  callback = function()
+    require("gitsigns").toggle_signs(false)
+  end,
+})
+
+
+vim.api.nvim_create_autocmd("InsertLeave", {
+  callback = function()
+    require("gitsigns").toggle_signs(true)
+  end,
+})
+
