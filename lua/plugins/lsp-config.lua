@@ -6,7 +6,7 @@ return {
 				ensure_installed = {},
 				"stylua", -- Lua formatter
 				"prettier", -- Prettier formatter
-          "black",
+				"black",
 				"isort",
 			})
 		end,
@@ -52,6 +52,22 @@ return {
 				capabilities = capabilities,
 				settings = {
 					["ts_ls"] = {},
+				},
+			})
+			vim.lsp.config("clangd", {
+				capabilities = capabilities,
+				cmd = {
+					"clangd",
+					"--compile-commands-dir=build", -- <-- add this line with your build folder path
+				},
+				settings = {
+					["clangd"] = {},
+				},
+			})
+			vim.lsp.config("cmake", {
+				capabilities = capabilities,
+				settings = {
+					["cmake"] = {},
 				},
 			})
 			vim.diagnostic.config({
